@@ -16,14 +16,10 @@ public class CameraController : MonoBehaviour
         position = player.position;
         position.z = -10f;
 
-        
         position.y = Math.Max(maxY, position.y + 7.82f);
         maxY = position.y;
 
         position.x += 2.37f;
-
-
-
 
         transform.position = Vector3.Lerp(transform.position, position, Time.deltaTime);
     }
